@@ -1,0 +1,27 @@
+{
+    "@@locale": "ru",
+    "temperature": "Температура",
+    "@temperature": {
+        "description": "Температура"
+    },
+    "celsius": "{temp} °C",
+    "@celsius": {
+        "description": "Температура в °C",
+        "placeholders": {
+            "temp": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    },
+    "fahrenheit": "{temp} °F",
+    "@fahrenheit": {
+        "description": "Температура в °F",
+        "placeholders": {
+            "temp": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "@@locale": "en",
+    "temperature": "Temperature",
+    "@temperature": {
+        "description": "Temperature"
+    },
+    "celsius": "{temp} °C",
+    "@celsius": {
+        "description": "Temperature in °C",
+        "placeholders": {
+            "temp": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    },
+    "fahrenheit": "{temp} °F",
+    "@fahrenheit": {
+        "description": "Temperature in °F",
+        "placeholders": {
+            "temp": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    }
+}
