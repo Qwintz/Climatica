@@ -7,11 +7,11 @@ abstract class Themes {
   static ThemeData get light => _getThemeData(
         colorScheme: ColorScheme.fromSeed(
           brightness: Brightness.light,
-          seedColor: Colors.purple,
+          seedColor: Colors.red,
         ),
         extensions: <ThemeExtension<dynamic>>[
           const ExtraColors(
-            brandColor: Colors.purple,
+            brandColor: Colors.red,
           ),
         ],
       );
@@ -19,11 +19,11 @@ abstract class Themes {
   static ThemeData get dark => _getThemeData(
         colorScheme: ColorScheme.fromSeed(
           brightness: Brightness.dark,
-          seedColor: Colors.green,
+          seedColor: Colors.blue,
         ),
         extensions: <ThemeExtension<dynamic>>[
           const ExtraColors(
-            brandColor: Colors.green,
+            brandColor: Colors.blue,
           ),
         ],
       );
@@ -49,12 +49,12 @@ abstract class Themes {
                     : Brightness.dark,
           ),
         ),
-        textTheme: const TextTheme(
+        textTheme: TextTheme(
           displayLarge: TextStyle(
-            fontSize: 72.0,
-            fontWeight: FontWeight.bold,
-          ),
-          titleLarge: TextStyle(
+              fontSize: 72.0,
+              fontWeight: FontWeight.bold,
+              color: colorScheme.primary),
+          titleLarge: const TextStyle(
             fontSize: 22.0,
             fontWeight: FontWeight.bold,
           ),

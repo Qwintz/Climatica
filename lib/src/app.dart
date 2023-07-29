@@ -13,7 +13,7 @@ class WeatherApp extends StatelessWidget {
       routerConfig: router,
       theme: Themes.light,
       darkTheme: Themes.dark,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       localizationsDelegates: Translations.localizationsDelegates,
       supportedLocales: Translations.supportedLocales,
       debugShowCheckedModeBanner: false,

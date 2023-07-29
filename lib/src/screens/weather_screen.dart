@@ -1,12 +1,18 @@
+// ignore_for_file: dead_code
+
 import 'package:flutter/material.dart';
 
 import '../extensions/extensions.dart';
+import '../utils/utils.dart';
 
 class WeatherScreen extends StatelessWidget {
   const WeatherScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    const temperature = 25.0;
+    const isFahrenheit = true;
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -17,7 +23,10 @@ class WeatherScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          context.translations.celsius(28),
+          isFahrenheit
+              ? context.translations
+                  .fahrenheit(TemperatureConverter.toFahrenheit(temperature))
+              : context.translations.celsius(temperature),
           style: context.theme.textTheme.displayLarge?.copyWith(
             color: context.theme.extraColors?.brandColor,
           ),
