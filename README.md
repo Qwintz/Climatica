@@ -1,3 +1,3 @@
-# weather_flutter_app
+# Climatica - weather mobile app
 
-A new Flutter project.
+A Flutter project.
