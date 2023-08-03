@@ -21,7 +21,7 @@ class WeatherRepository {
       if (realtimeWeather != null) {
         return realtimeWeather;
       } else {
-        throw const Failure(FailureType.database);
+        throw const HiveFailure("Settings is not cached");
       }
     }
   }

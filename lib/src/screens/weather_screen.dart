@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import '../extensions/extensions.dart';
+import '../themes/themes.dart';
 import '../utils/utils.dart';
 
 class WeatherScreen extends StatelessWidget {
@@ -10,26 +11,50 @@ class WeatherScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const temperature = 25.0;
-    const isFahrenheit = true;
+    const temperature = 21.0;
+    const isFahrenheit = false;
 
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         title: Text(
-          context.translations.temperature,
+          'Владивосток',
           style: context.theme.textTheme.titleLarge,
         ),
-      ),
-      body: Center(
-        child: Text(
-          isFahrenheit
-              ? context.translations
-                  .fahrenheit(TemperatureConverter.toFahrenheit(temperature))
-              : context.translations.celsius(temperature),
-          style: context.theme.textTheme.displayLarge?.copyWith(
-            color: context.theme.extraColors?.brandColor,
+        leading: IconButton(
+          icon: const Icon(ClimaticaIcons.location),
+          onPressed: () {},
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(ClimaticaIcons.refresh),
+            onPressed: () {},
           ),
+          IconButton(
+            icon: const Icon(ClimaticaIcons.settings),
+            onPressed: () {},
+          ),
+        ],
+      ),
+      extendBodyBehindAppBar: true,
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Text(
+              isFahrenheit
+                  ? context.translations.fahrenheit(
+                      TemperatureConverter.toFahrenheit(temperature))
+                  : context.translations.celsius(temperature),
+              style: context.theme.textTheme.displayLarge,
+            ),
+            const SizedBox(
+              height: 16.0,
+            ),
+            Text(
+              "Солнечно",
+              style: context.theme.textTheme.displaySmall,
+            ),
+          ],
         ),
       ),
     );

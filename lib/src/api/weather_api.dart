@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dio/dio.dart';
 
 import '../failures/failures.dart';
@@ -22,8 +24,10 @@ class WeatherAPI {
           },
         ),
       );
-    } catch (_) {
-      throw const Failure(FailureType.api);
+    } on DioException catch (e) {
+      throw APIFaulure(e.message);
+    } on SocketException {
+      throw const NetworkFailure("No internet");
     }
   }
 }

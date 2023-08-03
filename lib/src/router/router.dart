@@ -8,5 +8,9 @@ final router = GoRouter(
       path: '/',
       builder: (context, state) => const WeatherScreen(),
     ),
+    GoRoute(
+      path: '/settings',
+      builder: (context, state) => const SetttingsScreen(),
+    )
   ],
 );

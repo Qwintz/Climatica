@@ -1,18 +1,24 @@
 import 'package:equatable/equatable.dart';
 
-enum FailureType {
-  api,
-  database,
-  other;
-}
+abstract class Failure extends Equatable implements Exception {
+  final String? message;
 
-class Failure extends Equatable implements Exception {
-  final FailureType? type;
-
-  const Failure([this.type = FailureType.other]);
+  const Failure([this.message]);
 
   @override
   List<Object?> get props => [
-        type,
+        message,
       ];
+}
+
+class APIFaulure extends Failure {
+  const APIFaulure([super.message = "API failure"]);
+}
+
+class NetworkFailure extends Failure {
+  const NetworkFailure([super.message = "Network failure"]);
+}
+
+class HiveFailure extends Failure {
+  const HiveFailure([super.message = "Hive failure"]);
 }

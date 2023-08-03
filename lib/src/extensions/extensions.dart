@@ -9,5 +9,5 @@ extension BuildContextExtension on BuildContext {
 }
 
 extension ThemeDataExtension on ThemeData {
-  ExtraColors? get extraColors => extension<ExtraColors>();
+  ThemeColors get colors => extension<ThemeColors>()!;
 }
