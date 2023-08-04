@@ -13,14 +13,14 @@ class ThemeColors extends ThemeExtension<ThemeColors> {
   final Color green;
   final Color blue;
   final Color purple;
-  final Color? sunny;
-  final Color? cloudy;
-  final Color? rain;
-  final Color? fog;
-  final Color? snow;
-  final Color? glaze;
-  final Color? hail;
-  final Color? thunder;
+  final Color sunny;
+  final Color cloudy;
+  final Color rain;
+  final Color fog;
+  final Color snow;
+  final Color glaze;
+  final Color hail;
+  final Color thunder;
 
   const ThemeColors({
     required this.primary,
@@ -35,14 +35,14 @@ class ThemeColors extends ThemeExtension<ThemeColors> {
     required this.green,
     required this.blue,
     required this.purple,
-    this.sunny,
-    this.cloudy,
-    this.rain,
-    this.fog,
-    this.snow,
-    this.glaze,
-    this.hail,
-    this.thunder,
+    required this.sunny,
+    required this.cloudy,
+    required this.rain,
+    required this.fog,
+    required this.snow,
+    required this.glaze,
+    required this.hail,
+    required this.thunder,
   });
 
   @override

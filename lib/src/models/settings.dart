@@ -17,11 +17,15 @@ class Settings extends HiveObject with EquatableMixin {
   @HiveField(3)
   final String? locale;
 
+  @HiveField(4)
+  final bool showOnboarding;
+
   Settings({
     this.location = 'Vladivostok',
     this.isFahrenheit = false,
     this.themeMode,
     this.locale,
+    this.showOnboarding = true,
   });
 
   Settings copyWith({

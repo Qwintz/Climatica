@@ -22,3 +22,7 @@ class NetworkFailure extends Failure {
 class HiveFailure extends Failure {
   const HiveFailure([super.message = "Hive failure"]);
 }
+
+class UnknownFailure extends Failure {
+  const UnknownFailure([super.message = "Unknown failure"]);
+}

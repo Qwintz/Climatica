@@ -10,7 +10,7 @@ abstract class Themes {
     primary: Color(0xFF338051),
     black: Color(0xFF121212),
     darkGrey: Color(0xFF212121),
-    grey: Color(0xFF797979),
+    grey: Color(0xFF696969),
     lightGrey: Color(0xFFD9D9D9),
     white: Color(0xFFF5F5F5),
     red: Color(0xFFEF476F),
@@ -56,6 +56,66 @@ abstract class Themes {
                 darkMode ? Brightness.light : Brightness.dark,
           ),
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStatePropertyAll<Color?>(colors.primary),
+            foregroundColor: MaterialStatePropertyAll<Color?>(colors.white),
+            fixedSize: const MaterialStatePropertyAll<Size?>(
+                Size(double.infinity, 48.0)),
+            shape: MaterialStatePropertyAll<OutlinedBorder?>(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+            ),
+          ),
+        ),
+        filledButtonTheme: FilledButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStatePropertyAll<Color?>(
+                darkMode ? colors.darkGrey : colors.lightGrey),
+            foregroundColor: MaterialStatePropertyAll<Color?>(colors.grey),
+            fixedSize: const MaterialStatePropertyAll<Size?>(
+                Size(double.infinity, 32.0)),
+            shape: MaterialStatePropertyAll<OutlinedBorder?>(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+            ),
+            visualDensity: VisualDensity.compact,
+          ),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          contentPadding: const EdgeInsets.all(16.0),
+          prefixIconColor: colors.grey,
+          hintStyle: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 16.0,
+            fontWeight: FontWeight.w400,
+            color: colors.grey,
+          ),
+          border: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: darkMode ? colors.darkGrey : colors.lightGrey,
+              width: 1.5,
+            ),
+            borderRadius: BorderRadius.circular(16.0),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: colors.primary,
+              width: 2.0,
+            ),
+            borderRadius: BorderRadius.circular(16.0),
+          ),
+        ),
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: colors.primary,
+          selectionColor: colors.primary,
+          selectionHandleColor: colors.primary,
+        ),
+        progressIndicatorTheme: ProgressIndicatorThemeData(
+          color: darkMode ? colors.white : colors.black,
+        ),
         textTheme: TextTheme(
           displayLarge: TextStyle(
             fontFamily: 'Montserrat',
@@ -63,17 +123,41 @@ abstract class Themes {
             fontWeight: FontWeight.w700,
             color: darkMode ? colors.white : colors.black,
           ),
+          displayMedium: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 36.0,
+            fontWeight: FontWeight.w700,
+            color: darkMode ? colors.white : colors.black,
+          ),
           displaySmall: TextStyle(
             fontFamily: 'Montserrat',
-            fontSize: 20.0,
+            fontSize: 24.0,
             fontWeight: FontWeight.w700,
             color: darkMode ? colors.white : colors.black,
           ),
           titleLarge: TextStyle(
             fontFamily: 'Montserrat',
             fontSize: 20.0,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w700,
             color: darkMode ? colors.white : colors.black,
+          ),
+          bodyMedium: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 16.0,
+            fontWeight: FontWeight.w400,
+            color: colors.grey,
+          ),
+          labelLarge: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 16.0,
+            fontWeight: FontWeight.w500,
+            color: colors.white,
+          ),
+          labelMedium: TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 12.0,
+            fontWeight: FontWeight.w500,
+            color: colors.grey,
           ),
         ),
       );

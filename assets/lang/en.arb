@@ -1,12 +1,14 @@
 {
     "@@locale": "en",
-    "temperature": "Temperature",
-    "@temperature": {
-        "description": "Temperature"
-    },
-    "celsius": "{temp} °C",
-    "@celsius": {
-        "description": "Temperature in °C",
+    "title": "Climatica",
+    "onboardingText": "Discover the weather in your city Let's get started!",
+    "getStarted": "Get started",
+    "locationText": "To show the weather, we need to know your city",
+    "whereAreYou": "Where are you?",
+    "popularCities": "Popular cities",
+    "next": "Continue",
+    "celsiusValue": "{temp} °C",
+    "@celsiusValue": {
         "placeholders": {
             "temp": {
                 "type": "num",
@@ -14,14 +16,91 @@
             }
         }
     },
-    "fahrenheit": "{temp} °F",
-    "@fahrenheit": {
-        "description": "Temperature in °F",
+    "fahrenheitValue": "{temp} °F",
+    "@fahrenheitValue": {
         "placeholders": {
             "temp": {
                 "type": "num",
                 "format": "decimalPattern"
             }
         }
-    }
+    },
+    "percentValue": "{percent} %",
+    "@percentValue": {
+        "placeholders": {
+            "percent": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    },
+    "kilometersValue": "{kilometers} km",
+    "@kilometersValue": {
+        "placeholders": {
+            "kilometers": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    },
+    "metersPerSecondValue": "{speed} m/s",
+    "@metersPerSecondValue": {
+        "placeholders": {
+            "speed": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    },
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "precip": "Precip",
+    "visibility": "Visibility",
+    "uvIndex": "UV index",
+    "unknown": "Unknown",
+    "sunny": "Sunny",
+    "partlyCloudy": "Partly cloudy",
+    "cloudy": "Cloundy",
+    "lightFog": "Light fog",
+    "fog": "Fog",
+    "lightRain": "Light rain",
+    "rain": "Rain",
+    "heavyRain": "Heavy rain",
+    "lightSnow": "Light snow",
+    "snow": "Snow",
+    "heavySnow": "Heavy snow",
+    "lightGlaze": "Light glaze",
+    "glaze": "Glaze",
+    "heavyGlaze": "Heavy glaze",
+    "lightHail": "Light hail",
+    "hail": "Hail",
+    "heavyHail": "Heavy hail",
+    "thunder": "Thunder",
+    "lastUpdateValue": "Last update in {time}",
+    "@lastUpdateValue": {
+        "placeholders": {
+            "time": {
+                "type": "DateTime",
+                "format": "Hm"
+            }
+        }
+    },
+    "updating": "Updating...",
+    "units": "Units",
+    "theme": "Theme",
+    "language": "Language",
+    "changeCity": "Change city",
+    "system": "Dynamic",
+    "light": "Light",
+    "dark": "Dark",
+    "celsius": "Celsius °C",
+    "fahrenheit": "Fahrenheit °F",
+    "russian": "Русский язык",
+    "english": "English",
+    "failure": "Failure :(",
+    "locationFailure": "We were unable to get weather data. Try to change the city",
+    "noInternetFailure": "We were unable to get weather data. Check your internet connection",
+    "unknownFailure": "An unexpected error has occurred. Try again",
+    "tryAgain": "Try again"
 }

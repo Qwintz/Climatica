@@ -1,12 +1,14 @@
 {
     "@@locale": "ru",
-    "temperature": "Температура",
-    "@temperature": {
-        "description": "Температура"
-    },
-    "celsius": "{temp} °C",
-    "@celsius": {
-        "description": "Температура в °C",
+    "title": "Climatica",
+    "onboardingText": "Узнавайте о погоде в вашем городе. Давайте начнем!",
+    "getStarted": "Начать",
+    "locationText": "Для показа погоды нам необходимо знать ваш город",
+    "whereAreYou": "Где вы?",
+    "popularCities": "Популярные города",
+    "next": "Продолжить",
+    "celsiusValue": "{temp} °C",
+    "@celsiusValue": {
         "placeholders": {
             "temp": {
                 "type": "num",
@@ -14,14 +16,91 @@
             }
         }
     },
-    "fahrenheit": "{temp} °F",
-    "@fahrenheit": {
-        "description": "Температура в °F",
+    "fahrenheitValue": "{temp} °F",
+    "@fahrenheitValue": {
         "placeholders": {
             "temp": {
                 "type": "num",
                 "format": "decimalPattern"
             }
         }
-    }
+    },
+    "percentValue": "{percent} %",
+    "@percentValue": {
+        "placeholders": {
+            "percent": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    },
+    "kilometersValue": "{kilometers} км",
+    "@kilometersValue": {
+        "placeholders": {
+            "kilometers": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    },
+    "metersPerSecondValue": "{speed} м/c",
+    "@metersPerSecondValue": {
+        "placeholders": {
+            "speed": {
+                "type": "num",
+                "format": "decimalPattern"
+            }
+        }
+    },
+    "feelsLike": "Ощущается",
+    "humidity": "Влажность",
+    "wind": "Ветер",
+    "precip": "Осадки",
+    "visibility": "Видимость",
+    "uvIndex": "UV индекс",
+    "unknown": "Не определено",
+    "sunny": "Солнечно",
+    "partlyCloudy": "Переменная облачность",
+    "cloudy": "Облачно",
+    "lightFog": "Легкий туман",
+    "fog": "Туман",
+    "lightRain": "Морось",
+    "rain": "Дождь",
+    "heavyRain": "Ливень",
+    "lightSnow": "Легкий снег",
+    "snow": "Снег",
+    "heavySnow": "Сильный снег",
+    "lightGlaze": "Ледяная морось",
+    "glaze": "Ледяной дождь",
+    "heavyGlaze": "Сильный ледяной дождь",
+    "lightHail": "Небольшой град",
+    "hail": "Град",
+    "heavyHail": "Сильный град",
+    "thunder": "Гроза",
+    "lastUpdateValue": "Обновлено в {time}",
+    "@lastUpdateValue": {
+        "placeholders": {
+            "time": {
+                "type": "DateTime",
+                "format": "Hm"
+            }
+        }
+    },
+    "updating": "Обновление данных...",
+    "units": "Единицы измерения",
+    "theme": "Тема",
+    "language": "Язык",
+    "changeCity": "Изменить город",
+    "system": "Как в системе",
+    "light": "Светлая",
+    "dark": "Темная",
+    "celsius": "Градусы Цельсия °C",
+    "fahrenheit": "Градусы Фаренгейта °F",
+    "russian": "Русский язык",
+    "english": "English",
+    "failure": "Ошибка :(",
+    "locationFailure": "Нам не удалось получить данные о погоде. Попробуйте изменить город",
+    "noInternetFailure": "Нам не удалось получить данные о погоде. Проверьте соединение с интернетом",
+    "unknownFailure": "Возникла непредвиденная ошибка. Попробуйте снова",
+    "tryAgain": "Попробовать снова"
 }

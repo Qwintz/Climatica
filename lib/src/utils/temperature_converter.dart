@@ -1,3 +1,1 @@
-abstract class TemperatureConverter {
-  static num toFahrenheit(num celsius) => celsius * 1.8 + 32;
-}
+celsiusToFahrenheit(num celsius) => celsius * 1.8 + 32;
